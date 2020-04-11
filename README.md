@@ -44,7 +44,7 @@ Install mysql by docker
 docker pull mysql:5.6
 docker run --name mysql --net=host -e MYSQL_ROOT_PASSWORD='root@appinside' -d -p 3306:3306 \
 -v /data/mysql-data:/var/lib/mysql  \
--v /etc/localtime:/etc/localtime \
+-v /Users/tlingyx/tools/linux/etc/localtime:/Users/tlingyx/tools/linux/etc/localtime \
 mysql:5.6
 
 ```
@@ -65,7 +65,7 @@ docker pull tarscloud/framework
 docker run -d --net=host -e MYSQL_HOST=xxxxx -e MYSQL_ROOT_PASSWORD=xxxxx \
         -eREBUILD=false -eINET=enp3s0 -eSLAVE=false \
         -v/data/tars:/data/tars \
-        -v/etc/localtime:/etc/localtime \
+        -v/Users/tlingyx/tools/linux/etc/localtime:/Users/tlingyx/tools/linux/etc/localtime \
         tarscloud/framework
 ```
 
@@ -147,13 +147,13 @@ docker pull tarscloud/tars-node
 ```sh
 docker run -d --net=host -eINET=eth0 -eWEB_HOST=xxxxx \
         -v/data/tars:/data/tars \
-        -v/etc/localtime:/etc/localtime \
+        -v/Users/tlingyx/tools/linux/etc/localtime:/Users/tlingyx/tools/linux/etc/localtime \
         tarscloud/tars-node
 
 #for example:
 docker run -d --net=host -eINET=eth0 -eWEB_HOST=http://172.16.0.7:3000 \
         -v/data/tars:/data/tars \
-        -v/etc/localtime:/etc/localtime \
+        -v/Users/tlingyx/tools/linux/etc/localtime:/Users/tlingyx/tools/linux/etc/localtime \
         tarscloud/tars-node    
 ```
 

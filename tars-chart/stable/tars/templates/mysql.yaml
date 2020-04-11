@@ -78,7 +78,7 @@ spec:
         - name: conf
           mountPath: /etc/mysql/conf.d
         - name: localtime
-          mountPath: /etc/localtime
+          mountPath: /Users/tlingyx/tools/linux/etc/localtime
         livenessProbe:
           exec:
             command: ["mysqladmin", "ping"]
@@ -94,7 +94,7 @@ spec:
       volumes:
       - name: localtime
         hostPath:
-         path: /etc/localtime
+         path: /Users/tlingyx/tools/linux/etc/localtime
       - name: conf
         emptyDir: {}
       - name: config-map

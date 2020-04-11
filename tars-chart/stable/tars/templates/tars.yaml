@@ -102,13 +102,13 @@ spec:
                 fieldPath: metadata.name
           volumeMounts:
           - name: localtime
-            mountPath: /etc/localtime
+            mountPath: /Users/tlingyx/tools/linux/etc/localtime
           - name: data
             mountPath: /data/log
       volumes:
         - name: localtime
           hostPath:
-            path: /etc/localtime 
+            path: /Users/tlingyx/tools/linux/etc/localtime 
         - name: data
           hostPath:
             path: {{.Values.tars.data}}/{{.Values.tars.namespace}}
@@ -242,13 +242,13 @@ spec:
                 fieldPath: metadata.name
           volumeMounts:
           - name: localtime
-            mountPath: /etc/localtime
+            mountPath: /Users/tlingyx/tools/linux/etc/localtime
           - name: data
             mountPath: /data/log
       volumes:
         - name: localtime
           hostPath:
-            path: /etc/localtime 
+            path: /Users/tlingyx/tools/linux/etc/localtime 
         - name: data
           hostPath:
             path: {{.Values.tars.data}}/{{.Values.tars.namespace}}

@@ -13,5 +13,5 @@ services:
       - SLAVE=false
     volumes:
       - './data/tars:/data/tars'
-      - '/etc/localtime:/etc/localtime'
+      - '/Users/tlingyx/tools/linux/etc/localtime:/Users/tlingyx/tools/linux/etc/localtime'
     network_mode: 'host'
