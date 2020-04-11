@@ -8,6 +8,6 @@ entries:
     digest: 08cdde3ef77cac00ebf97e7e635770b7f035cb54ee0fb1c3a57212cdd1d28c86
     name: tars
     urls:
-    - https://github.com/tlingYX/TarsDocker/tree/master/charts/stable/tars-0.1.0.tgz
+    - https://tlingyx.github.io/TarsDocker/charts/stable/tars-0.1.0.tgz
     version: 0.1.0
 generated: "2020-01-15T21:55:29.43498754+08:00"
